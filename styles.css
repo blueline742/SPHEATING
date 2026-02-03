@@ -403,7 +403,7 @@ h4 {
         mask-image: none !important;
 
         /* Use layered background for fade effect */
-        background-image: linear-gradient(to right, rgba(250, 251, 252, 1) 0%, rgba(250, 251, 252, 0.4) 50%, rgba(250, 251, 252, 0.1) 100%),
+        background-image: linear-gradient(to right, rgba(230, 240, 255, 0.95) 0%, rgba(230, 240, 255, 0.6) 50%, rgba(26, 75, 140, 0.2) 100%),
             url('images/hero.jpeg') !important;
 
         /* Force scroll behavior */
