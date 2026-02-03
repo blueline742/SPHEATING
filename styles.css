@@ -375,6 +375,8 @@ h4 {
     overflow: hidden;
     /* Ensure no fixed background on parent for mobile safest fallback */
     background-attachment: scroll;
+    /* Create stacking context for iOS z-index:-1 fix */
+    z-index: 0;
 }
 
 /* Hero Background Image */
@@ -420,6 +422,9 @@ h4 {
 .hero-content {
     display: block;
     max-width: 600px;
+    position: relative;
+    z-index: 2;
+    /* Ensure text sits above background */
 }
 
 .hero-tag {
