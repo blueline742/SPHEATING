@@ -373,6 +373,8 @@ h4 {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    /* Ensure no fixed background on parent for mobile safest fallback */
+    background-attachment: scroll;
 }
 
 /* Hero Background Image */
@@ -389,6 +391,30 @@ h4 {
     z-index: -1;
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
     -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+/* iOS/Mobile Hero Background Fix */
+@media (hover: none) and (pointer: coarse) {
+    .hero::before {
+        /* Disable mask-image which can cause issues on some iOS versions combined with fixed backgrounds */
+        -webkit-mask-image: none !important;
+        mask-image: none !important;
+
+        /* Use layered background for fade effect */
+        background-image: linear-gradient(to right, rgba(250, 251, 252, 1) 0%, rgba(250, 251, 252, 0.4) 50%, rgba(250, 251, 252, 0.1) 100%),
+            url('images/hero.jpeg') !important;
+
+        /* Force scroll behavior */
+        background-attachment: scroll !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+
+        /* Reset opacity since we handle fade via gradient */
+        opacity: 1 !important;
+        width: 100%;
+        /* Full width on mobile to ensure coverage */
+    }
 }
 
 .hero-content {
