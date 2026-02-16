@@ -2162,3 +2162,221 @@ summary::-webkit-details-marker {
     color: white;
     text-decoration: underline;
 }
+
+/* --- Areas We Cover Section --- */
+.areas-section {
+    padding: var(--section-padding) 0;
+    background: white;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.area-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 1.25rem;
+    background: var(--neutral-grey);
+    border: 1px solid transparent;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.area-card::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary-blue);
+    opacity: 0.4;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+a.area-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(26, 75, 140, 0.2);
+    background: white;
+}
+
+a.area-card:hover::before {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.area-name {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--text-dark);
+}
+
+.area-postcode {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    margin-left: auto;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.areas-note {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+.areas-note a {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.areas-note a:hover {
+    text-decoration: underline;
+}
+
+/* --- Area Landing Pages --- */
+.area-hero {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    color: var(--primary-blue);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumb:hover {
+    opacity: 0.7;
+}
+
+.area-hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.area-hero>.container>p {
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    max-width: 600px;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.area-services-section {
+    padding: 4rem 0;
+    background: white;
+}
+
+.area-services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.area-services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.area-service-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 1.25rem 1.5rem;
+    background: var(--neutral-grey);
+    border-radius: 14px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+.area-service-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.area-service-item svg {
+    width: 22px;
+    height: 22px;
+    color: var(--primary-blue);
+    flex-shrink: 0;
+}
+
+.area-trust-section {
+    padding: 4rem 0;
+}
+
+.area-trust-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.area-cta-section {
+    padding: 5rem 0;
+    background: white;
+    text-align: center;
+}
+
+.area-cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.area-cta-section p {
+    color: var(--text-medium);
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.area-cta-section .cta-group {
+    justify-content: center;
+}
+
+/* Area page responsive */
+@media (max-width: 1024px) {
+    .areas-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .area-services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .area-card {
+        padding: 0.85rem 1rem;
+    }
+
+    .area-name {
+        font-size: 0.85rem;
+    }
+}
