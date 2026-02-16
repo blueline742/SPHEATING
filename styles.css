@@ -2144,3 +2144,21 @@ summary::-webkit-details-marker {
         bottom: 10px;
     }
 }
+
+/* Footer Credit */
+.footer-credit {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.footer-credit a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-credit a:hover {
+    color: white;
+    text-decoration: underline;
+}
