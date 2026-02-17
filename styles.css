@@ -2271,6 +2271,8 @@ a.area-card:hover::before {
     z-index: -1;
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
     -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
 }
 
 /* Area Hero iOS/Mobile Background Fix */
