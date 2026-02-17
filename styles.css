@@ -1888,8 +1888,9 @@ body.banner-visible .hero {
     gap: 10px;
     color: white;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     font-family: var(--font-heading);
+    white-space: nowrap;
 }
 
 .sticky-call svg {
