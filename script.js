@@ -219,4 +219,57 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- EmailJS Contact Form ---
+    emailjs.init('akTKmNACOXBCqGnjU');
+
+    const quoteForm = document.getElementById('quoteForm');
+    const formStatus = document.getElementById('formStatus');
+
+    if (quoteForm) {
+        quoteForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const submitBtn = quoteForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+
+            // Loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `
+                <svg class="btn-spinner" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="10" />
+                </svg>
+                Sending...
+            `;
+
+            const templateParams = {
+                name: quoteForm.querySelector('#name').value,
+                phone: quoteForm.querySelector('#phone').value,
+                email: quoteForm.querySelector('#email').value || 'Not provided',
+                service: quoteForm.querySelector('#service').value,
+                message: quoteForm.querySelector('#message').value || 'No message provided'
+            };
+
+            emailjs.send('service_g88vo5m', 'template_1xtsd7a', templateParams)
+                .then(function () {
+                    formStatus.textContent = '✅ Your request has been sent! We\'ll be in touch shortly.';
+                    formStatus.style.color = '#16a34a';
+                    quoteForm.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+
+                    // Clear status after 5 seconds
+                    setTimeout(() => {
+                        formStatus.textContent = '';
+                    }, 5000);
+                })
+                .catch(function (error) {
+                    console.error('EmailJS Error:', error);
+                    formStatus.textContent = '❌ Something went wrong. Please call us on 0333 404 7642 instead.';
+                    formStatus.style.color = '#dc2626';
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                });
+        });
+    }
+
 });

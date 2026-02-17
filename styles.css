@@ -2795,3 +2795,28 @@ a.area-card:hover::before {
         font-size: 1rem !important;
     }
 }
+
+/* --- EmailJS Form Spinner & Status --- */
+.btn-spinner {
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.form-status {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    min-height: 1.5em;
+    transition: all 0.3s ease;
+}
