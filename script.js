@@ -224,10 +224,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const quoteForm = document.getElementById('quoteForm');
     const formStatus = document.getElementById('formStatus');
+    let lastSubmitTime = 0;
 
     if (quoteForm) {
         quoteForm.addEventListener('submit', function (e) {
             e.preventDefault();
+
+            // Honeypot check — bots fill this hidden field, real users don't
+            const honeypot = quoteForm.querySelector('#website');
+            if (honeypot && honeypot.value) {
+                // Fake success to fool the bot
+                formStatus.textContent = '✅ Your request has been sent! We\'ll be in touch shortly.';
+                formStatus.style.color = '#16a34a';
+                quoteForm.reset();
+                return;
+            }
+
+            // Rate limiting — prevent submissions within 30 seconds
+            const now = Date.now();
+            if (now - lastSubmitTime < 30000) {
+                formStatus.textContent = '⏳ Please wait a moment before submitting again.';
+                formStatus.style.color = '#d97706';
+                return;
+            }
 
             const submitBtn = quoteForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
@@ -251,6 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             emailjs.send('service_g88vo5m', 'template_1xtsd7a', templateParams)
                 .then(function () {
+                    lastSubmitTime = Date.now();
                     formStatus.textContent = '✅ Your request has been sent! We\'ll be in touch shortly.';
                     formStatus.style.color = '#16a34a';
                     quoteForm.reset();

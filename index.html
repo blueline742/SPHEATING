@@ -936,6 +936,11 @@
                             <textarea id="message" name="message" rows="4"
                                 placeholder="Tell us about your requirements..."></textarea>
                         </div>
+                        <!-- Honeypot anti-spam field - hidden from real users -->
+                        <div class="form-hp" aria-hidden="true" tabindex="-1">
+                            <label for="website">Website</label>
+                            <input type="text" id="website" name="website" autocomplete="off" tabindex="-1">
+                        </div>
                         <button type="submit" class="btn btn-primary btn-block ripple">
                             Send Request
                             <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor"

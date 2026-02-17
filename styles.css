@@ -2820,3 +2820,15 @@ a.area-card:hover::before {
     min-height: 1.5em;
     transition: all 0.3s ease;
 }
+
+/* Honeypot - visually hidden but accessible to bots */
+.form-hp {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
