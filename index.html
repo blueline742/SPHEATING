@@ -68,7 +68,9 @@
             {"@type": "City", "name": "Sutton"},
             {"@type": "City", "name": "Kingston upon Thames"},
             {"@type": "City", "name": "Epsom"},
-            {"@type": "City", "name": "Redhill"},
+            {"@type": "City", "name": "Wandsworth"},
+            {"@type": "City", "name": "Merton"},
+            {"@type": "City", "name": "Lambeth"},
             {"@type": "AdministrativeArea", "name": "Surrey"},
             {"@type": "AdministrativeArea", "name": "South London"}
         ],
@@ -128,7 +130,7 @@
         "name": "What areas do you cover?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We cover Surrey and South London, including Croydon, Sutton, Kingston, Epsom, Redhill and surrounding areas."
+          "text": "We cover Surrey and South London, including Croydon, Sutton, Kingston, Epsom, Wandsworth, Merton, Lambeth and surrounding areas."
         }
       }, {
         "@type": "Question",
@@ -257,7 +259,7 @@
                 <h1>Gas Safe Engineers <span class="text-highlight">in</span> Surrey & South London</h1>
                 <h2 class="hero-subtitle">Domestic & Commercial Gas Engineers Serving Surrey & South London</h2>
                 <p>Boiler repairs, central heating installations and plumbing services.<br>
-                    24-hour emergency callouts across Croydon, Sutton, Kingston, Epsom, Redhill and surrounding areas.
+                    24-hour emergency callouts across Croydon, Sutton, Kingston, Epsom, Wandsworth, Merton, Lambeth and surrounding areas.
                 </p>
                 <div class="cta-group">
                     <a href="tel:03334047642" class="btn btn-primary ripple">
@@ -284,138 +286,389 @@
             <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">What We Do</span>
                 <h2>Our Gas & Heating Services</h2>
-                <p>Gas Safe certified services across Surrey & South London. From emergency repairs to full
-                    installations.</p>
+                <p>At SP Heating (Sustainable Plumbing & Heating Certified), we provide reliable plumbing, heating, and gas services for both domestic and commercial properties. Our engineers are fully trained and experienced in diagnosing, repairing, and installing a wide range of systems.</p>
             </div>
             <div class="services-grid">
                 <!-- Service 1: Emergency -->
-                <div class="service-card fluid-card emergency-card" data-animate="fade-up" style="--delay: 100ms;">
-                    <div class="icon-blob red-pulse">
-                        <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-                            <line x1="12" y1="9" x2="12" y2="13" />
-                            <line x1="12" y1="17" x2="12.01" y2="17" />
-                        </svg>
+                <div class="service-card fluid-card has-photo emergency-card" data-animate="fade-up" style="--delay: 100ms;">
+                    <div class="service-card-photo">
+                        <img src="images/work-van-emergency.jpeg" alt="SP Heating emergency van on call" loading="lazy">
                     </div>
-                    <h3>24hr Emergency Callout</h3>
-                    <p>Rapid response for gas leaks, boiler breakdowns & urgent repairs across Surrey & South London.
-                    </p>
-                    <a href="tel:03334047642" class="card-link emergency-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72" />
-                        </svg>
-                        Call Now
-                    </a>
+                    <div class="service-card-body">
+                        <div class="icon-blob red-pulse">
+                            <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                <line x1="12" y1="9" x2="12" y2="13" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <h3>Emergency Repairs</h3>
+                        <p>When heating or plumbing problems occur unexpectedly, we provide rapid response diagnostics and repairs to get your system back up and running as quickly as possible.</p>
+                        <a href="tel:03334047642" class="card-link emergency-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72" />
+                            </svg>
+                            Call Now
+                        </a>
+                    </div>
                 </div>
                 <!-- Service 2: Boiler Services -->
-                <div class="service-card fluid-card" data-animate="fade-up" style="--delay: 150ms;">
-                    <div class="icon-blob blue-calm">
-                        <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                            <line x1="3" y1="9" x2="21" y2="9" />
-                            <line x1="9" y1="21" x2="9" y2="9" />
-                        </svg>
+                <div class="service-card fluid-card has-photo" data-animate="fade-up" style="--delay: 150ms;">
+                    <div class="service-card-photo">
+                        <img src="images/work-boiler-repair.jpeg" alt="Engineer repairing a boiler" loading="lazy">
                     </div>
-                    <h3>Boiler Installation & Repair</h3>
-                    <p>Gas boiler breakdowns, servicing, replacements & new installations. Baxi, Vaillant & Worcester
-                        accredited.</p>
-                    <a href="boiler-installation-repair.html" class="card-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                            <polyline points="12 5 19 12 12 19" />
-                        </svg>
-                        Learn More
-                    </a>
+                    <div class="service-card-body">
+                        <div class="icon-blob blue-calm">
+                            <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                <line x1="3" y1="9" x2="21" y2="9" />
+                                <line x1="9" y1="21" x2="9" y2="9" />
+                            </svg>
+                        </div>
+                        <h3>Boiler Services</h3>
+                        <p>We carry out boiler servicing, diagnostics, and repairs on all major brands including Vaillant, Worcester Bosch, Ideal, and more. Whether your boiler has lost pressure, stopped producing hot water, or requires an annual service, we ensure it operates safely and efficiently.</p>
+                        <a href="boiler-installation-repair.html" class="card-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                            Learn More
+                        </a>
+                    </div>
                 </div>
-                <!-- Service 3: Central Heating -->
-                <div class="service-card fluid-card" data-animate="fade-up" style="--delay: 200ms;">
-                    <div class="icon-blob blue-calm">
-                        <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-                        </svg>
+                <!-- Service 3: Boiler Installations -->
+                <div class="service-card fluid-card has-photo" data-animate="fade-up" style="--delay: 200ms;">
+                    <div class="service-card-photo">
+                        <img src="images/work-new-worcester.jpeg" alt="New Worcester boiler installation" loading="lazy">
                     </div>
-                    <h3>Central Heating Systems</h3>
-                    <p>Full heating system installations, upgrades, powerflush services & radiator replacements.</p>
-                    <a href="#contact" class="card-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                            <polyline points="22,6 12,13 2,6" />
-                        </svg>
-                        Get a Quote
-                    </a>
+                    <div class="service-card-body">
+                        <div class="icon-blob blue-calm">
+                            <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 16 12 12 8 16"/>
+                                <line x1="12" y1="12" x2="12" y2="21"/>
+                                <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/>
+                            </svg>
+                        </div>
+                        <h3>Boiler Installations & Replacements</h3>
+                        <p>If your boiler is beyond repair or inefficient, we provide professional boiler installations and upgrades, helping you choose the right system for your home or property. Baxi, Vaillant & Worcester Bosch accredited.</p>
+                        <a href="boiler-installation-repair.html" class="card-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                            Learn More
+                        </a>
+                    </div>
                 </div>
-                <!-- Service 4: Water Heaters -->
-                <div class="service-card fluid-card" data-animate="fade-up" style="--delay: 250ms;">
-                    <div class="icon-blob blue-calm">
-                        <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
-                        </svg>
+                <!-- Service 4: Central Heating -->
+                <div class="service-card fluid-card has-photo" data-animate="fade-up" style="--delay: 250ms;">
+                    <div class="service-card-photo">
+                        <img src="images/work-new-pipework.jpeg" alt="Central heating pipework installation" loading="lazy">
                     </div>
-                    <h3>Water Heaters & Cylinders</h3>
-                    <p>Hot water systems, vented cylinders, unvented installations & water heater servicing.</p>
+                    <div class="service-card-body">
+                        <div class="icon-blob blue-calm">
+                            <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                            </svg>
+                        </div>
+                        <h3>Heating Systems</h3>
+                        <p>We install, repair, and maintain central heating systems, including radiators, valves, pumps, and pipework to ensure your home stays warm and energy efficient.</p>
+                        <a href="#contact" class="card-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            Get a Quote
+                        </a>
+                    </div>
                 </div>
-                <!-- Service 5: Pipework -->
-                <div class="service-card fluid-card" data-animate="fade-up" style="--delay: 300ms;">
-                    <div class="icon-blob grey-trust">
-                        <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16v16H4z" fill="none" />
-                            <path d="M4 12h6v8H4zM14 4h6v12h-6z" />
-                        </svg>
+                <!-- Service 5: Unvented Hot Water -->
+                <div class="service-card fluid-card has-photo" data-animate="fade-up" style="--delay: 300ms;">
+                    <div class="service-card-photo">
+                        <img src="images/work-unvented-install.jpeg" alt="Unvented hot water cylinder installation" loading="lazy">
                     </div>
-                    <h3>Gas Pipework & Safety</h3>
-                    <p>Gas pipe installations, testing, purging & landlord gas safety certificates for domestic & rental
-                        properties.</p>
+                    <div class="service-card-body">
+                        <div class="icon-blob blue-calm">
+                            <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                            </svg>
+                        </div>
+                        <h3>Unvented Hot Water Systems <span class="service-badge">G3 Qualified</span></h3>
+                        <p>Our G3 qualified engineers specialise in the installation, servicing, and repair of unvented hot water cylinders, ensuring safe operation, optimal performance, and full compliance with UK building regulations.</p>
+                        <a href="#contact" class="card-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                            Get a Quote
+                        </a>
+                    </div>
                 </div>
-                <!-- Service 6: Commercial -->
-                <div class="service-card fluid-card" data-animate="fade-up" style="--delay: 350ms;">
-                    <div class="icon-blob grey-trust">
-                        <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="4" y="2" width="16" height="20" rx="2" />
-                            <line x1="9" y1="6" x2="15" y2="6" />
-                            <line x1="9" y1="10" x2="15" y2="10" />
-                            <line x1="9" y1="14" x2="15" y2="14" />
-                            <line x1="9" y1="18" x2="15" y2="18" />
-                        </svg>
+                <!-- Service 6: Leak Detection -->
+                <div class="service-card fluid-card has-photo" data-animate="fade-up" style="--delay: 350ms;">
+                    <div class="service-card-photo">
+                        <img src="images/work-boiler-connections.jpeg" alt="Leak detection on boiler pipework" loading="lazy">
                     </div>
-                    <h3>Commercial Gas Services</h3>
-                    <p>Commercial heating systems, air heating appliances & industrial gas installations.</p>
+                    <div class="service-card-body">
+                        <div class="icon-blob grey-trust">
+                            <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                <line x1="11" y1="8" x2="11" y2="14"/>
+                                <line x1="8" y1="11" x2="14" y2="11"/>
+                            </svg>
+                        </div>
+                        <h3>Leak Detection</h3>
+                        <p>Using modern techniques and experience, we help locate hidden leaks in walls, floors, or underground pipework — including thermal imaging and acoustic detection — helping prevent costly property damage.</p>
+                        <a href="tel:03334047642" class="card-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72" />
+                            </svg>
+                            Call Now
+                        </a>
+                    </div>
                 </div>
-                <!-- Service 7: Building Regs -->
-                <div class="service-card fluid-card" data-animate="fade-up" style="--delay: 400ms;">
-                    <div class="icon-blob grey-trust">
-                        <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 11l3 3L22 4" />
-                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-                        </svg>
+                <!-- Service 7: Gas Pipework -->
+                <div class="service-card fluid-card has-photo" data-animate="fade-up" style="--delay: 400ms;">
+                    <div class="service-card-photo">
+                        <img src="images/work-gas-pipework.jpeg" alt="Gas pipework and safety inspection" loading="lazy">
                     </div>
-                    <h3>Building Regulations Work</h3>
-                    <p>Flue liners, heating extensions, waste water heat recovery & all Part J compliance work.</p>
+                    <div class="service-card-body">
+                        <div class="icon-blob grey-trust">
+                            <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16v16H4z" fill="none" />
+                                <path d="M4 12h6v8H4zM14 4h6v12h-6z" />
+                            </svg>
+                        </div>
+                        <h3>Gas Safety & Certification</h3>
+                        <p>As Gas Safe registered engineers, we carry out gas safety checks, landlord certificates (Domestic & Commercial), and safety inspections to ensure all gas appliances are compliant and safe to use.</p>
+                        <a href="#contact" class="card-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
+                                <path d="M9 11l3 3L22 4" />
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                            </svg>
+                            Get a Quote
+                        </a>
+                    </div>
                 </div>
-                <!-- Service 8: Plumbing -->
-                <div class="service-card fluid-card" data-animate="fade-up" style="--delay: 450ms;">
-                    <div class="icon-blob blue-calm">
-                        <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-                        </svg>
+                <!-- Service 8: Commercial -->
+                <div class="service-card fluid-card has-photo" data-animate="fade-up" style="--delay: 450ms;">
+                    <div class="service-card-photo">
+                        <img src="images/work-commercial-boilers.jpeg" alt="Commercial boiler installation" loading="lazy">
                     </div>
-                    <h3>Plumbing Services</h3>
-                    <p>Leak repairs, pipe installations, bathroom plumbing & general plumbing maintenance.</p>
-                    <a href="tel:03334047642" class="card-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72" />
-                        </svg>
-                        Call Now
-                    </a>
+                    <div class="service-card-body">
+                        <div class="icon-blob grey-trust">
+                            <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="2" width="16" height="20" rx="2" />
+                                <line x1="9" y1="6" x2="15" y2="6" />
+                                <line x1="9" y1="10" x2="15" y2="10" />
+                                <line x1="9" y1="14" x2="15" y2="14" />
+                            </svg>
+                        </div>
+                        <h3>Commercial Gas Services</h3>
+                        <p>Our experienced engineers provide gas tightness testing, purging, and commissioning of gas pipework, along with installation, servicing, and repairs of commercial boilers and heating equipment, including natural draught boilers and gas-fired tube heaters.</p>
+                        <a href="#contact" class="card-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                            Get a Quote
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 9: Plumbing -->
+                <div class="service-card fluid-card has-photo" data-animate="fade-up" style="--delay: 500ms;">
+                    <div class="service-card-photo">
+                        <img src="images/work-plumbing-sink.jpeg" alt="Plumbing work under a sink" loading="lazy">
+                    </div>
+                    <div class="service-card-body">
+                        <div class="icon-blob blue-calm">
+                            <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                        </div>
+                        <h3>Plumbing & Leak Repairs</h3>
+                        <p>From burst pipes and water leaks to faulty taps and pipework repairs, we quickly identify and resolve plumbing issues to prevent damage and restore your system.</p>
+                        <a href="tel:03334047642" class="card-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72" />
+                            </svg>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 10: Bathroom Installations -->
+                <div class="service-card fluid-card has-photo" data-animate="fade-up" style="--delay: 550ms;">
+                    <div class="service-card-photo">
+                        <img src="images/work-engineer-on-site.jpeg" alt="SP Heating engineer on site" loading="lazy">
+                    </div>
+                    <div class="service-card-body">
+                        <div class="icon-blob blue-calm">
+                            <svg class="service-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                        </div>
+                        <h3>Bathroom Installations</h3>
+                        <p>We provide complete bathroom upgrades — managing every stage from plumbing, pipework, and waterproofing through to the final installation of sanitaryware and fixtures. From concept to completion, built to a high standard of workmanship.</p>
+                        <a href="#contact" class="card-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-icon">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                            Get a Quote
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">What Our Customers Say</span>
+                <h2>Trusted by Homeowners & Businesses</h2>
+                <p>Don't just take our word for it — here's what our customers across Surrey & South London have to say.</p>
+            </div>
+        </div>
+        <div class="reviews-reel-wrapper">
+            <div class="reviews-reel">
+                <!-- First set -->
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Boiler broke down on a freezing morning. SP Heating had an engineer with us within a few hours. Diagnosed and fixed the fault quickly. Absolutely brilliant service."</p>
+                    <div class="review-author">
+                        <span class="review-name">James T.</span>
+                        <span class="review-location">Croydon</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Needed a new boiler installed urgently. The team were professional, tidy and completed the full installation in one day. Could not fault them at all."</p>
+                    <div class="review-author">
+                        <span class="review-name">Sarah M.</span>
+                        <span class="review-location">Sutton</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Had a mysterious pressure drop on our heating system for months. SP Heating used specialist leak detection equipment and found the issue in no time. Great work."</p>
+                    <div class="review-author">
+                        <span class="review-name">David K.</span>
+                        <span class="review-location">Clapham</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Used SP Heating for our annual boiler service. Thorough, professional and reasonably priced. The engineer was knowledgeable and took time to explain everything. Will definitely be using them again."</p>
+                    <div class="review-author">
+                        <span class="review-name">Emma L.</span>
+                        <span class="review-location">Kingston</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Commercial boiler installation for our office. Completed on time with minimal disruption to our business. Communication throughout was excellent. Highly recommended."</p>
+                    <div class="review-author">
+                        <span class="review-name">Michael R.</span>
+                        <span class="review-location">Bromley</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Gas safety certificate for our rental property — done quickly and efficiently. Very professional and clearly highly knowledgeable. Will use SP Heating for all future work."</p>
+                    <div class="review-author">
+                        <span class="review-name">Rachel B.</span>
+                        <span class="review-location">Tooting</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Unvented cylinder installation carried out to an exceptional standard. G3 qualified engineer, very thorough and explained the system clearly. The work was clean and tidy too."</p>
+                    <div class="review-author">
+                        <span class="review-name">Lisa H.</span>
+                        <span class="review-location">Balham</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Called SP Heating for an emergency — no hot water and a possible leak. They arrived same day, sorted the problem and left everything clean and working. 5 stars without hesitation."</p>
+                    <div class="review-author">
+                        <span class="review-name">Tom W.</span>
+                        <span class="review-location">Streatham</span>
+                    </div>
+                </div>
+                <!-- Duplicate set for seamless loop -->
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Boiler broke down on a freezing morning. SP Heating had an engineer with us within a few hours. Diagnosed and fixed the fault quickly. Absolutely brilliant service."</p>
+                    <div class="review-author">
+                        <span class="review-name">James T.</span>
+                        <span class="review-location">Croydon</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Needed a new boiler installed urgently. The team were professional, tidy and completed the full installation in one day. Could not fault them at all."</p>
+                    <div class="review-author">
+                        <span class="review-name">Sarah M.</span>
+                        <span class="review-location">Sutton</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Had a mysterious pressure drop on our heating system for months. SP Heating used specialist leak detection equipment and found the issue in no time. Great work."</p>
+                    <div class="review-author">
+                        <span class="review-name">David K.</span>
+                        <span class="review-location">Clapham</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Used SP Heating for our annual boiler service. Thorough, professional and reasonably priced. The engineer was knowledgeable and took time to explain everything. Will definitely be using them again."</p>
+                    <div class="review-author">
+                        <span class="review-name">Emma L.</span>
+                        <span class="review-location">Kingston</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Commercial boiler installation for our office. Completed on time with minimal disruption to our business. Communication throughout was excellent. Highly recommended."</p>
+                    <div class="review-author">
+                        <span class="review-name">Michael R.</span>
+                        <span class="review-location">Bromley</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Gas safety certificate for our rental property — done quickly and efficiently. Very professional and clearly highly knowledgeable. Will use SP Heating for all future work."</p>
+                    <div class="review-author">
+                        <span class="review-name">Rachel B.</span>
+                        <span class="review-location">Tooting</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Unvented cylinder installation carried out to an exceptional standard. G3 qualified engineer, very thorough and explained the system clearly. The work was clean and tidy too."</p>
+                    <div class="review-author">
+                        <span class="review-name">Lisa H.</span>
+                        <span class="review-location">Balham</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Called SP Heating for an emergency — no hot water and a possible leak. They arrived same day, sorted the problem and left everything clean and working. 5 stars without hesitation."</p>
+                    <div class="review-author">
+                        <span class="review-name">Tom W.</span>
+                        <span class="review-location">Streatham</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- About / Trust Section -->
     <section class="about" id="about">
@@ -675,9 +928,17 @@
                     <span class="area-name">Purley</span>
                     <span class="area-postcode">CR8</span>
                 </a>
-                <a href="gas-engineer-redhill.html" class="area-card">
-                    <span class="area-name">Redhill</span>
-                    <span class="area-postcode">RH1</span>
+                <a href="gas-engineer-wandsworth.html" class="area-card">
+                    <span class="area-name">Wandsworth</span>
+                    <span class="area-postcode">SW18</span>
+                </a>
+                <a href="gas-engineer-merton.html" class="area-card">
+                    <span class="area-name">Merton</span>
+                    <span class="area-postcode">SW19</span>
+                </a>
+                <a href="gas-engineer-lambeth.html" class="area-card">
+                    <span class="area-name">Lambeth</span>
+                    <span class="area-postcode">SE11</span>
                 </a>
             </div>
             <p class="areas-note" data-animate="fade-up" style="--delay: 200ms;">
@@ -721,8 +982,7 @@
                             </svg></div>
                     </summary>
                     <div class="faq-answer">
-                        <p>We cover Surrey and South London, including Croydon, Sutton, Kingston, Epsom, Redhill and
-                            surrounding areas.</p>
+                        <p>We cover Surrey and South London, including Croydon, Sutton, Kingston, Epsom, Wandsworth, Merton, Lambeth and surrounding areas.</p>
                     </div>
                 </details>
 
@@ -1019,7 +1279,21 @@
                                     <circle cx="12" cy="10" r="3" />
                                     <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z" />
                                 </svg>
-                                Redhill
+                                Wandsworth
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="10" r="3" />
+                                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z" />
+                                </svg>
+                                Merton
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="10" r="3" />
+                                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z" />
+                                </svg>
+                                Lambeth
                             </li>
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

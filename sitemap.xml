@@ -151,8 +151,20 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://spheating.co.uk/gas-engineer-redhill.html</loc>
-    <lastmod>2026-02-17</lastmod>
+    <loc>https://spheating.co.uk/gas-engineer-wandsworth.html</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://spheating.co.uk/gas-engineer-merton.html</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://spheating.co.uk/gas-engineer-lambeth.html</loc>
+    <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
