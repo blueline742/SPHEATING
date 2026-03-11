@@ -859,11 +859,11 @@ h4 {
 }
 
 .marquee-fwd {
-    animation: marquee-scroll-fwd 55s linear infinite;
+    animation: marquee-scroll-fwd 90s linear infinite;
 }
 
 .marquee-rev {
-    animation: marquee-scroll-rev 65s linear infinite;
+    animation: marquee-scroll-rev 110s linear infinite;
 }
 
 .work-marquee-wrap:hover .marquee-track {
