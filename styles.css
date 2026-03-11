@@ -584,14 +584,14 @@ h4 {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25rem;
 }
 
 .fluid-card {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     box-shadow: var(--shadow-sm);
@@ -1828,7 +1828,7 @@ h4 {
 /* --- Responsive --- */
 @media (max-width: 1024px) {
     .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .footer-grid {
@@ -1840,6 +1840,15 @@ h4 {
 @media (max-width: 768px) {
     :root {
         --section-padding: 4rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .fluid-card {
+        padding: 1.25rem;
     }
 
     /* Reduce blue blobs on mobile */
