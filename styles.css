@@ -806,6 +806,101 @@ h4 {
     object-fit: cover;
 }
 
+/* --- Work Marquee Gallery --- */
+.work-marquee-wrap {
+    margin-top: 3rem;
+}
+
+.work-marquee-label {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.work-marquee-label::before,
+.work-marquee-label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 28%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d0d8e8);
+}
+
+.work-marquee-label::before {
+    right: calc(50% + 80px);
+}
+
+.work-marquee-label::after {
+    left: calc(50% + 80px);
+    background: linear-gradient(to left, transparent, #d0d8e8);
+}
+
+.work-marquee {
+    overflow: hidden;
+    margin-bottom: 12px;
+    -webkit-mask: linear-gradient(90deg, transparent 0%, black 7%, black 93%, transparent 100%);
+    mask: linear-gradient(90deg, transparent 0%, black 7%, black 93%, transparent 100%);
+}
+
+.work-marquee:last-child {
+    margin-bottom: 0;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 12px;
+    width: max-content;
+}
+
+.marquee-fwd {
+    animation: marquee-scroll-fwd 55s linear infinite;
+}
+
+.marquee-rev {
+    animation: marquee-scroll-rev 65s linear infinite;
+}
+
+.work-marquee-wrap:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-scroll-fwd {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-scroll-rev {
+    0%   { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.wp {
+    width: 280px;
+    height: 210px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(10, 22, 40, 0.1);
+}
+
+.wp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.wp:hover img {
+    transform: scale(1.06);
+}
+
 /* Trust Badges */
 .trust-badges {
     display: flex;
@@ -1771,6 +1866,15 @@ h4 {
     .gallery-hero {
         grid-column: 1 / -1;
         grid-row: 1;
+    }
+
+    .work-marquee-wrap {
+        margin-top: 2rem;
+    }
+
+    .wp {
+        width: 220px;
+        height: 165px;
     }
 
     .instagram-card {
