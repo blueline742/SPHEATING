@@ -1755,22 +1755,22 @@ h4 {
 
     .about-header {
         grid-template-columns: 1fr;
-        gap: 2rem;
-        margin-bottom: 2.5rem;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-meta {
+        gap: 1.25rem;
     }
 
     .about-gallery {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 220px 160px 160px;
+        grid-template-rows: 200px 150px 150px;
     }
 
     .gallery-hero {
         grid-column: 1 / -1;
         grid-row: 1;
-    }
-
-    .trust-badges {
-        justify-content: flex-start;
     }
 
     .instagram-card {
@@ -1965,13 +1965,29 @@ h4 {
     }
 
     .trust-badges {
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
     }
 
     .trust-badge {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        gap: 8px;
+        gap: 6px;
+    }
+
+    .badge-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .badge-number {
+        font-size: 1.2rem;
+    }
+
+    .badge-label {
+        font-size: 0.7rem;
     }
 
     .badge-text {
